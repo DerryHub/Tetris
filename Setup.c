@@ -1,6 +1,6 @@
 #include"acllib.h"
-#define CONTINUE "¼ÌĞø"
-#define START "¿ªÊ¼"
+#define CONTINUE "ç»§ç»­"
+#define START "å¼€å§‹"
 #define image1_color RGB(0,150,70)
 #define image2_color RGB(255,150,150)
 #define image3_color RGB(100,150,255)
@@ -73,17 +73,17 @@ void pause_click(void);
 void replay_click(void); 
 void replay(void);
 void mouselistener(int x,int y,int button,int event);
-char*T_start="¿ªÊ¼",*T_exit="ÍË³ö",*T_pause="ÔİÍ£",*T_replay="ÖØÍæ";
+char*T_start="å¼€å§‹",*T_exit="é€€å‡º",*T_pause="æš‚åœ",*T_replay="é‡ç©";
 char*T_gameover="GAME OVER!";
-char T_score[6]="00000",*T_SCORE="µÃ·Ö";
-char*T_rule="ÓÎÏ·¹æÔò";
-char*T_ctrl1="¡°¡ü¡±¼üĞı×ª£¬¡°¡ı¡±¼ü¼ÓËÙ£»";
-char*T_ctrl2="¡°¡û¡±¡°¡ú¡±¼ü¿ØÖÆ×óÓÒÒÆ¶¯£»";
-char*T_ctrl3="¿Õ¸ñ¼ü¿É¿ØÖÆÓÎÏ·ÔİÍ£/¿ªÊ¼£»"; 
-char*T_ctrl4="×é³ÉĞĞµÄ·½¿é»á±»ÏûÈ¥£»";
-char*T_ctrl5="µ±·½¿é»ıÀÛ³¬¹ıºìÏßÓÎÏ·½áÊø¡£"; 
-char*T_design="¡ª¡ªDesigned By ÁÖµÂÂÁ&ÂŞÁ¢Ñï";
-char*T_know="ÎÒÖªµÀÀ²";
+char T_score[6]="00000",*T_SCORE="å¾—åˆ†";
+char*T_rule="æ¸¸æˆè§„åˆ™";
+char*T_ctrl1="â€œâ†‘â€é”®æ—‹è½¬ï¼Œâ€œâ†“â€é”®åŠ é€Ÿï¼›";
+char*T_ctrl2="â€œâ†â€â€œâ†’â€é”®æ§åˆ¶å·¦å³ç§»åŠ¨ï¼›";
+char*T_ctrl3="ç©ºæ ¼é”®å¯æ§åˆ¶æ¸¸æˆæš‚åœ/å¼€å§‹ï¼›"; 
+char*T_ctrl4="ç»„æˆè¡Œçš„æ–¹å—ä¼šè¢«æ¶ˆå»ï¼›";
+char*T_ctrl5="å½“æ–¹å—ç§¯ç´¯è¶…è¿‡çº¢çº¿æ¸¸æˆç»“æŸã€‚"; 
+char*T_design="â€”â€”Designed By Derry Lin";
+char*T_know="æˆ‘çŸ¥é“å•¦";
 void paint_key(void);
 void paint_ar(int [][W_num]);
 void init_win(void);
@@ -803,7 +803,7 @@ int Setup()
 }
 void init_win(void)
 {
-	initWindow("¶íÂŞË¹·½¿é",170,10,W,H);
+	initWindow("ä¿„ç½—æ–¯æ–¹å—",170,10,W,H);
 	pMusic=(ACL_Sound*)malloc(sizeof(ACL_Sound));
 	pClick=(ACL_Sound*)malloc(sizeof(ACL_Sound));
 	pGameover=(ACL_Sound*)malloc(sizeof(ACL_Sound));
